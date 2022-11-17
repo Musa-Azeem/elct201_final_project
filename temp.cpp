@@ -36,7 +36,7 @@ float getThermistorTemperature(void)
 //This function will check for a temperature triggered deactivation of the motor
 void CheckTemperatureSensor(void)
 {
-    if(getThermistorTemperature() =< TemperatureLimit) {
+    if(getThermistorTemperature() <= TemperatureLimit) {
     cout << "Thermistor START!" << endl;
     OUTPUT = 0.91;
     RED_LED = 0; // ON
